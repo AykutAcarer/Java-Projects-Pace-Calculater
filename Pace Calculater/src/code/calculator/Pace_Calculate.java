@@ -87,14 +87,14 @@ public class Pace_Calculate extends JFrame {
 				String second1 = text_second.getText();
 				int second = Integer.parseInt(second1);
 				
-				double st = hour+ (double)minute/60 + (double)second/3600;
-				double ergebnis = (double) st/km;
-				int stund = (int)ergebnis;
-				double min = ((ergebnis - stund)*60);
-				double sek = ((min - (int)min)*60);
+				double hr = hour+ (double)minute/60 + (double)second/3600;
+				double result = (double) hr/km;
+				int hr1 = (int)result;
+				double min = ((result - hr1)*60);
+				double sec = ((min - (int)min)*60);
 				
-				JOptionPane.showMessageDialog(null, " The Time is pro Km: " + "\n"+ stund + " stunde " + 
-						"\n"+(int)min + " minuten "+ "\n"+(int)sek + " sekunden", "Pace Calculator", 1);
+				JOptionPane.showMessageDialog(null, " The Time is pro Km: " + "\n"+ hr1 + " hour " + 
+						"\n"+(int)min + " minute "+ "\n"+(int)sec + " second", "Pace Calculator", 1);
 				
 			}
 		});
